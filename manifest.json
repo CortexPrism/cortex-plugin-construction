@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-construction",
-  "version": "1.0.0",
-  "description": "Construction & Field Service Manager — Procore/PlanGrid/ServiceTitan for crew scheduling, material tracking, job progress",
+  "version": "1.0.1",
+  "description": "Construction & Field Service Manager \u2014 Procore/PlanGrid/ServiceTitan for crew scheduling, material tracking, job progress",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-construction",
   "homepage": "https://cortexprism.io/marketplace/plugins/construction",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "construction_schedule_crew",
@@ -33,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
